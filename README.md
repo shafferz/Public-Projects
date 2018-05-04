@@ -19,3 +19,11 @@ In the file directory 'Public-Projects/Code-Based Projects/', you will find proj
   
 ## Research
 In the file directory 'Public-Projects/Research/', you will find academic writings that came as the result of research I have done at Allegheny College. Research published in this repository strictly pertains to the realm of Computer Science, and will not contain research done outside of this field. Works in Progress are in their own directory, and do not necessarily represent the extend or breadth of my current research. 
+
+## Accreditation and Thanks
+I would like to extend my fullest grattitude to the professors who have guided my work at Allegheny, and my peers with whom I have collaborated. This includes, but is not limited, to the following individuals:
+- Dr. Janyl Jumadinova, my academic advisor and professor. Oversaw work on multiple projects in this repository, guided me through course selections, and provided useful and lifelong professional advice.
+- Dr. Oliver Bonham-Carter, professor. Oversaw the proposal stages of my senior thesis, as well as other research and projects in this repository.
+- Tara Douglass, student and friend. Collaborated with me to create The Riddle Dungeon, and pushed me to be the best, most productive student I can be. Words cannot express my gratitude in this regard. 
+- Adam Spence, student. Collaborated with me and contributed to the Allegheny College Room Draw Number Generator. Simultaneously collaborated with me to ensure the completion an unlisted project whose work schedule ran concurrent to this one, which was a tiring and arduous process for both of us. 
+- Eva Fann and Lucas Hoesch, students. Collaborated with me and contributed invaluably to the Unity A* Demo, as well as spent many long, frustrating hours in the laboratory debugging and refactoring code for a language we were largely unfamiliar with.
