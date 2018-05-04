@@ -1,0 +1,28 @@
+Grade Level | Code
+------------------
+Rising Sophomore | SO
+Rising Junior | JR
+Rising Senior | SR
+
+Dorm Hall | Key code
+--------------------
+Allegheny Commons | AGC
+Baldwin | BLD
+Brooks | BRK
+Crawford | CRW
+Caflisch | CFL
+College Court | CRT
+Edwards | EDW
+North Village I | NVO
+North Village II | NVT
+Ravine-Narvik | RVN
+Schultz | SCH
+Walker Annex | WKA
+Walker | WLK
+
+Medical Tag | Description
+-------------------------
+NA | No specific medical need
+TD | Temporary Disability
+PD | Permanent Disability
+SD | Severe Disability (requires special housing, automatic placement)

@@ -1,0 +1,5 @@
+SO,Adam Spence,NA,16.0,EDW,120
+SO,Zachary Shaffer,D,12.0,RVN,347
+JR,John Doe,PD,18.0,WLK,216
+SR,Jane Doe,NA,16.00,SCH,54€ý,€ý,
+
