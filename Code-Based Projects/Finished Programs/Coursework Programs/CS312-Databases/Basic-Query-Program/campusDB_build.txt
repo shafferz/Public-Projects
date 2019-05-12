@@ -1,0 +1,47 @@
+/*Creates a database concerning class, Instructor and Student information*/
+/*Usage: cat campusDB_build.txt | sqlite3 myCampusDB.sqlite3
+*/
+
+/* Enable foreign keys: automatically check any foreign key constraints */
+PRAGMA foreign_keys = ON; /* Enable foreign keys */
+
+drop table Teaches;
+create table Teaches (
+ID        varchar NOT NULL,
+courseId  varchar,
+secId     varchar,
+semester  varchar,
+year      varchar);
+
+drop table Department;
+create table Department (
+courseId    varchar,
+courseType  varchar,
+deptName    varchar primary key);
+
+drop table Instructor;
+create table Instructor (
+ID        varchar primary key,
+name      varchar NOT NULL,
+student   varchar,
+deptName  varchar,
+salary    varchar,
+foreign key (deptName) references Department(deptName));
+
+drop table Student;
+create table Student (
+ID        varchar primary key,
+name      varchar NOT NULL,
+deptName  varchar,
+totCred   varchar,
+foreign key (deptName) references Department(deptName));
+
+drop table Course;
+create table Course (
+courseId   varchar primary key,
+title      varchar,
+deptName   varchar,
+credits    varchar,
+foreign key (deptName) references Department(deptName));
+
+/* Usage: cat campusDB_build.txt | sqlite3 myCampusDB.sqlite3 */

@@ -1,0 +1,39 @@
+newpath
+/x 90 def
+/y 180 def
+/-x -90 def
+/-y -180 def
+  0 y y add moveto
+  y y add y add x add 0 rlineto %horizon line
+  y y add y y add moveto %bottom right corner of door
+  0 x rlineto
+  -x 0 rlineto
+  0 -x rlineto
+  5 0 rlineto
+  0 x 5 sub rlineto
+  x 5 sub 5 sub 0 rlineto
+  0 -x 5 add rlineto
+  -x 5 add 0 rlineto
+  -x -y -y add rlineto %end of door code
+  y y add y y add moveto
+  x -y -y add rlineto %other half of the driveway/walkway
+  y y add 15 sub y y add 45 add moveto %start of doorknob
+  -5 0 rlineto
+  0 -5 rlineto
+  5 0 rlineto
+  0 5 rlineto %end of doorknob
+  y y add 5 sub y y add 5 sub moveto %start of floor mat
+  5 -15 rlineto
+  -x 0 rlineto
+  5 15 rlineto
+  x 10 sub 0 rlineto %end of floor mat
+stroke
+showpage
+
+% This work is an artistic take on the front door of a house.
+% This image has a deeper meaning though.
+% The door represents the challenges of entering the work force that all
+% college students face coming out of school, and the walkway represents us
+% being here at Allegheny College, on the path to success. The Welcome Mat, the
+% darkest symbol of all, represents the place we stay standing with our resumes,
+% stagnate, hoping that someone will answer us and let us into the work force.

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BIF VERSION="0.3"  xmlns="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3 http://www.cs.ubc.ca/labs/lci/fopi/ve/XMLBIFv0_3/XMLBIFv0_3.xsd">
+<NETWORK>
+<NAME>Untitled</NAME>
+<PROPERTY>detailed = </PROPERTY>
+<PROPERTY>short = </PROPERTY>
+
+<VARIABLE TYPE="nature">
+	<NAME>Weekday</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7242.439453125, 5054.4375)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Business Hours</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7739.560546875, 5046.10546875)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Person in Alden</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7481.28076171875, 5315.49560546875)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Alden is Closed</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7481.28076171875, 5046.10546875)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Person is a student</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7375.98681640625, 5443.17578125)</PROPERTY>
+</VARIABLE>
+
+<VARIABLE TYPE="nature">
+	<NAME>Person is a faculty</NAME>
+	<OUTCOME>T</OUTCOME>
+	<OUTCOME>F</OUTCOME>
+	<PROPERTY>position = (7591.63671875, 5443.89453125)</PROPERTY>
+</VARIABLE>
+
+<DEFINITION>
+	<FOR>Weekday</FOR>
+	<TABLE>0.7143 0.2857</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Business Hours</FOR>
+	<TABLE>0.625 0.375</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Person in Alden</FOR>
+	<GIVEN>Weekday</GIVEN>
+	<GIVEN>Business Hours</GIVEN>
+	<GIVEN>Alden is Closed</GIVEN>
+	<TABLE>0.0 1.0 0.44644 0.55356 0.0 1.0 0.26786 0.73214 0.0 1.0 0.17856 0.82144 0.0 1.0 0.10714 0.89286</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Alden is Closed</FOR>
+	<TABLE>0.025 0.975</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Person is a student</FOR>
+	<GIVEN>Person in Alden</GIVEN>
+	<TABLE>0.84 0.16 0.0 1.0</TABLE>
+</DEFINITION>
+
+<DEFINITION>
+	<FOR>Person is a faculty</FOR>
+	<GIVEN>Person in Alden</GIVEN>
+	<TABLE>0.16 0.84 0.0 1.0</TABLE>
+</DEFINITION>
+</NETWORK>
+</BIF>
